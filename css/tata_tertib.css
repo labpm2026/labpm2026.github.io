@@ -1,0 +1,173 @@
+/* =========================================================
+   TATA_TERTIB.CSS — khusus halaman Tata Tertib
+   ========================================================= */
+
+/* Fit satu layar (desktop), scroll natural di HP */
+html, body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app-container {
+  height: 100vh;
+}
+
+/* MAIN CONTENT FIT SCREEN */
+.main-content {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background:
+    linear-gradient(135deg, rgba(240, 253, 244, 0.93) 0%, rgba(230, 244, 234, 0.88) 60%, rgba(255, 255, 255, 0.96) 100%),
+    url('') center/cover no-repeat;
+  overflow: hidden;
+}
+
+.orb-1 {
+  width: 320px;
+  height: 320px;
+  background: rgba(5, 150, 105, 0.22);
+  top: 10%;
+  left: 15%;
+  animation: floatOrb1 12s infinite ease-in-out alternate;
+}
+
+.orb-2 {
+  width: 280px;
+  height: 280px;
+  background: rgba(16, 185, 129, 0.25);
+  bottom: 12%;
+  right: 15%;
+  animation: floatOrb2 10s infinite ease-in-out alternate;
+}
+
+.content-container {
+  max-width: 650px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* CARD TATA TERTIB UTAMA (CLICKABLE TO GOOGLE DRIVE) */
+.card-drive-rules {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-main);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-soft);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 0.7s ease;
+}
+
+.card-drive-rules::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--gradient-main);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-drive-rules:hover {
+  transform: translateY(-8px) scale(1.01);
+  background: var(--white);
+  border-color: rgba(5, 150, 105, 0.35);
+  box-shadow: var(--shadow-hover);
+}
+
+.card-drive-rules:hover::before {
+  opacity: 1;
+}
+
+.icon-wrapper {
+  width: 72px;
+  height: 72px;
+  background: var(--mint-bg);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease;
+}
+
+.card-drive-rules:hover .icon-wrapper {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.rules-badge {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: var(--primary-green);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.rules-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--dark-green);
+  letter-spacing: -0.5px;
+  margin-bottom: 0.8rem;
+  line-height: 1.25;
+}
+
+.rules-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 500px;
+}
+
+.drive-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--gradient-main);
+  color: var(--white);
+  padding: 0.85rem 1.8rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 100px;
+  box-shadow: 0 8px 20px -4px rgba(5, 150, 105, 0.3);
+  transition: all 0.3s ease;
+}
+
+.card-drive-rules:hover .drive-btn {
+  box-shadow: 0 12px 25px -4px rgba(5, 150, 105, 0.45);
+  transform: translateX(4px);
+}
+
+/* RESPONSIVE LAYOUT */
+@media (max-width: 768px) {
+  html, body { overflow-y: auto; height: auto; }
+  .app-container { height: auto; min-height: 100vh; }
+  .main-content { align-items: flex-start; padding: 2rem 1.2rem; }
+  .card-drive-rules { padding: 2.2rem 1.5rem; }
+  .rules-title { font-size: 1.4rem; }
+  .rules-desc { font-size: 0.875rem; }
+}

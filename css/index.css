@@ -1,0 +1,331 @@
+/* =========================================================
+   INDEX.CSS — khusus halaman Home
+   ========================================================= */
+
+/* Kunci tampilan "satu layar penuh" hanya untuk layar besar (tablet ke atas).
+   Di HP, tinggi dibiarkan menyesuaikan konten agar tidak terpotong/ada ruang kosong. */
+@media (min-width: 769px) {
+  html, body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  .app-container {
+    height: 100vh;
+  }
+}
+
+/* HERO SECTION (FIT TO SCREEN) */
+.hero-section {
+  flex: 1;
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(2.5rem, 8vw, 4rem) clamp(1.25rem, 4vw, 2rem);
+  /* Overlay foto + latar hijau keputihan lembut */
+  background:
+    linear-gradient(135deg, rgba(240, 253, 244, 0.93) 0%, rgba(230, 244, 234, 0.88) 60%, rgba(255, 255, 255, 0.96) 100%),
+    url('https://images.unsplash.com/photo-1600363503477-a8d1d6d57dfc?q=80https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1800w=2022https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1800auto=formathttps://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1800fit=crophttps://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1800ixlib=rb-4.1.0https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1800ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+  overflow: hidden;
+}
+
+.orb-1 {
+  width: clamp(180px, 40vw, 320px);
+  height: clamp(180px, 40vw, 320px);
+  background: rgba(5, 150, 105, 0.25);
+  top: 10%;
+  left: 15%;
+  opacity: 0.6;
+  animation: floatOrb1 12s infinite ease-in-out alternate;
+}
+
+.orb-2 {
+  width: clamp(160px, 35vw, 280px);
+  height: clamp(160px, 35vw, 280px);
+  background: rgba(16, 185, 129, 0.3);
+  bottom: 15%;
+  right: 15%;
+  opacity: 0.6;
+  animation: floatOrb2 10s infinite ease-in-out alternate;
+}
+
+.hero-container {
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ANIMASI BADGE PULSE */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  font-size: clamp(0.65rem, 2vw, 0.8rem);
+  font-weight: 700;
+  color: var(--primary-green);
+  margin-bottom: clamp(1rem, 3vw, 1.5rem);
+  box-shadow: 0 4px 15px rgba(5, 150, 105, 0.08);
+  backdrop-filter: blur(8px);
+  animation: fadeIn 0.6s ease;
+  text-align: center;
+  max-width: 100%;
+}
+
+.hero-badge .dot {
+  width: 8px;
+  height: 8px;
+  background: var(--primary-green);
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.7);
+  animation: pulseDot 2s infinite;
+}
+
+.hero-title {
+  font-size: clamp(1.9rem, 6vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: var(--dark-green);
+  margin-bottom: clamp(0.8rem, 2vw, 1.2rem);
+  animation: fadeInUp 0.8s ease;
+}
+
+.hero-title span {
+  background: var(--gradient-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-desc {
+  font-size: clamp(0.85rem, 2.2vw, 1.05rem);
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: clamp(1.25rem, 3vw, 2rem);
+  max-width: 620px;
+  font-weight: 500;
+  animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+.hero-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  width: 100%;
+  max-width: 640px;
+  animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+.action-card-glow {
+  position: relative;
+  border-radius: calc(var(--radius-md) + 3px);
+  padding: 2.5px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.action-card-glow::before {
+  content: '';
+  position: absolute;
+  inset: -60%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    var(--primary-green) 25deg,
+    #34d399 45deg,
+    transparent 75deg,
+    transparent 360deg
+  );
+  animation: spinBorder 3.5s linear infinite;
+}
+
+@keyframes spinBorder {
+  to { transform: rotate(360deg); }
+}
+
+.action-card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  text-decoration: none;
+  text-align: left;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.action-card-media {
+  position: relative;
+  width: 100%;
+  height: 64px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.action-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.action-card:hover .action-card-media img {
+  transform: scale(1.06);
+}
+
+.action-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.4rem;
+  padding: 0.7rem 1rem 0.85rem;
+}
+
+.action-card-icon {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.action-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+}
+
+.action-card-title {
+  font-weight: 700;
+  font-size: 1.02rem;
+}
+
+.action-card-desc {
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.45;
+  opacity: 0.85;
+}
+
+.action-card-arrow {
+  margin-top: 0.2rem;
+  align-self: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.action-card:hover .action-card-arrow {
+  transform: translateX(4px);
+}
+
+.action-card-primary {
+  background: var(--gradient-main);
+  color: var(--white);
+  box-shadow: 0 10px 25px -5px rgba(5, 150, 105, 0.3);
+}
+
+.action-card-primary .action-card-icon {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.action-card-primary .action-card-desc {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.action-card-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px -5px rgba(5, 150, 105, 0.4);
+}
+
+.action-card-secondary {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--dark-green);
+  border: 1px solid var(--border-color);
+  backdrop-filter: blur(8px);
+}
+
+.action-card-secondary .action-card-icon {
+  background: rgba(5, 150, 105, 0.1);
+  color: var(--primary-green);
+}
+
+.action-card-secondary:hover {
+  background: var(--white);
+  border-color: rgba(5, 150, 105, 0.4);
+  transform: translateY(-3px);
+}
+
+@keyframes pulseDot {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(5, 150, 105, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(5, 150, 105, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(5, 150, 105, 0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  /* Di HP, .app-container hanya punya min-height: 100vh (aturan
+     min-width: 769px di atas tidak berlaku di sini), sehingga
+     .hero-section (flex: 1) bisa lebih tinggi dari kontennya sendiri.
+     align-items: center pada kondisi ini membuat hero-container
+     "terjebak" di tengah ruang kosong tersebut, bukan di atas.
+     Maka di mobile kita pindah ke flex-start supaya konten selalu
+     mulai dari atas, tetap fleksibel mengikuti tinggi konten apa pun
+     ukuran layarnya. */
+  .hero-section {
+    align-items: flex-start;
+    padding-top: clamp(2rem, 10vw, 3rem);
+    padding-bottom: clamp(2rem, 10vw, 3rem);
+  }
+
+  /* Card di-stack 1 kolom, tinggi mengikuti konten (tidak dipaksa
+     dengan min-height) supaya seringkas mungkin, dan hero-section
+     punya padding-bottom sebagai ruang aman agar card kedua
+     (secondary) tidak terlihat terpotong. */
+  .hero-actions {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .action-card-media {
+    height: 56px;
+  }
+
+  .action-card-title {
+    font-size: 0.98rem;
+  }
+
+  .action-card-desc {
+    font-size: 0.76rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-badge { font-size: 0.62rem; padding: 0.35rem 0.8rem; }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="png" href="logo.png">
+  <title>LAB PM 2026</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS terpisah: common.css (nav & dasar, seragam di semua halaman) + index.css (khusus halaman ini) -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- NAVBAR (markup seragam di semua halaman) -->
+    <header class="top-header">
+      <div class="nav-container">
+        <a href="index.html" class="brand">
+          <div class="brand-logo"><img src="logo.png" alt="Logo Laboratorium Pengolahan Mineral"></div>
+          <span>Pengolahan Mineral 2026</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav id="mainNav">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="acara.html">Acara</a></li>
+            <li><a href="tata_tertib.html">Tata Tertib</a></li>
+            <li><a href="refrensi.html">Referensi</a></li>
+            <li><a href="format_laporan.html">Format Laporan</a></li>
+            <li><a href="asiste_lab.html">Asisten Lab</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO SECTION FIT LAYAR -->
+    <main class="hero-section">
+      <!-- Orbs Animasi Bergerak di Background -->
+      <div class="animated-orb orb-1"></div>
+      <div class="animated-orb orb-2"></div>
+
+      <div class="hero-container">
+
+        <h1 class="hero-title">
+          Praktikum <span>Pengolahan Mineral</span>
+        </h1>
+
+        <p class="hero-desc">
+          Portal resmi pusat informasi praktikum. Akses format, tugas, materi pembelajaran, petunjuk praktikum, hingga direktori tim asisten.
+        </p>
+
+        <div class="hero-actions">
+          <div class="action-card-glow">
+            <a href="acara.html" class="action-card action-card-secondary">
+              <div class="action-card-media">
+                <img src="https://images.unsplash.com/photo-1600363503477-a8d1d6d57dfc?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" loading="lazy">
+              </div>
+              <div class="action-card-content">
+                <span class="action-card-icon">📅</span>
+                <span class="action-card-body">
+                  <span class="action-card-title">Lihat Acara</span>
+                  <span class="action-card-desc">File & rangkaian acara praktikum  →</span>
+                </span>
+              </div>
+            </a>
+          </div>
+          <div class="action-card-glow">
+            <a href="tata_tertib.html" class="action-card action-card-secondary">
+              <div class="action-card-media">
+                <img src="https://images.unsplash.com/photo-1562240020-ce31ccb0fa7d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" loading="lazy">
+              </div>
+              <div class="action-card-content">
+                <span class="action-card-icon">📋</span>
+                <span class="action-card-body">
+                  <span class="action-card-title">Tata Tertib</span>
+                  <span class="action-card-desc">Aturan & keselamatan laboratorium  →</span>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/common.js"></script>
+</body>
+</html>

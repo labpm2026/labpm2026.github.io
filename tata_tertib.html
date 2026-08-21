@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="png" href="logo.png">
+  <title>LAB PM 2026</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS terpisah: common.css (nav & dasar, seragam di semua halaman) + tata_tertib.css (khusus halaman ini) -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/tata_tertib.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- NAVBAR (markup seragam di semua halaman) -->
+    <header class="top-header">
+      <div class="nav-container">
+        <a href="index.html" class="brand">
+          <div class="brand-logo"><img src="logo.png" alt="Logo Laboratorium Pengolahan Mineral"></div>
+          <span>Pengolahan Mineral 2026</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav id="mainNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="acara.html">Acara</a></li>
+            <li><a href="tata_tertib.html" class="active">Tata Tertib</a></li>
+            <li><a href="refrensi.html">Referensi</a></li>
+            <li><a href="format_laporan.html">Format Laporan</a></li>
+            <li><a href="asiste_lab.html">Asisten Lab</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <div class="animated-orb orb-1"></div>
+      <div class="animated-orb orb-2"></div>
+
+      <div class="content-container">
+
+        <!-- CARD TATA TERTIB (KLIK MENUJU GOOGLE DRIVE) -->
+        <a href="https://drive.google.com/your-tatatertib-link-here" target="_blank" rel="noopener noreferrer" class="card-drive-rules">
+          <div class="icon-wrapper">
+            📜
+          </div>
+
+          <div class="rules-badge">TATA TERTIB RESMI</div>
+          <h1 class="rules-title">Laboratorium Pengolahan Mineral</h1>
+
+          <p class="rules-desc">
+            Aturan dan tata tertib yang berlaku selama mengikuti praktikum pengolahan mineral 2026
+          </p>
+
+          <div class="drive-btn">
+            Buka via Google Drive ↗
+          </div>
+        </a>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="js/common.js"></script>
+</body>
+</html>

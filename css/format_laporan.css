@@ -1,0 +1,245 @@
+/* =========================================================
+   FORMAT_LAPORAN.CSS — khusus halaman Format Laporan
+   ========================================================= */
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem 3rem 1rem;
+  background:
+    linear-gradient(135deg, rgba(240, 253, 244, 0.93) 0%, rgba(230, 244, 234, 0.88) 60%, rgba(255, 255, 255, 0.96) 100%),
+    url('') center/cover no-repeat;
+}
+
+.orb-1 {
+  width: clamp(200px, 30vw, 320px);
+  height: clamp(200px, 30vw, 320px);
+  background: rgba(5, 150, 105, 0.2);
+  top: 5%;
+  left: 10%;
+  animation: floatOrb1 12s infinite ease-in-out alternate;
+}
+
+.orb-2 {
+  width: clamp(180px, 25vw, 250px);
+  height: clamp(180px, 25vw, 250px);
+  background: rgba(16, 185, 129, 0.25);
+  bottom: 10%;
+  right: 10%;
+  animation: floatOrb2 10s infinite ease-in-out alternate;
+}
+
+.content-wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* HEADER HALAMAN */
+.page-header {
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+.page-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: var(--primary-green);
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.page-title {
+  font-size: clamp(1.5rem, 4vw, 2.4rem);
+  font-weight: 800;
+  color: var(--dark-green);
+  letter-spacing: -0.8px;
+  line-height: 1.25;
+  margin-bottom: 0.5rem;
+}
+
+.page-desc {
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  color: var(--text-muted);
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* SECTION TITLE */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.2rem;
+}
+
+.section-title {
+  font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+  font-weight: 800;
+  color: var(--dark-green);
+  letter-spacing: -0.3px;
+}
+
+.section-badge {
+  background: var(--primary-green);
+  color: var(--white);
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 100px;
+}
+
+/* GRID & CARD FORMAT LAPORAN */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.card-format {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+  text-decoration: none;
+  color: var(--text-main);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-format::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--gradient-main);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-format:hover {
+  transform: translateY(-6px);
+  background: var(--white);
+  border-color: rgba(5, 150, 105, 0.35);
+  box-shadow: var(--shadow-hover);
+}
+
+.card-format:hover::before {
+  opacity: 1;
+}
+
+.card-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--mint-bg);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease;
+}
+
+.card-format:hover .card-icon {
+  transform: scale(1.08) rotate(-4deg);
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.card-tag {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--primary-green);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--dark-green);
+  line-height: 1.35;
+}
+
+.card-desc {
+  font-size: 0.825rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.8rem;
+  border-top: 1px dashed rgba(5, 150, 105, 0.2);
+}
+
+.file-type {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  background: var(--mint-soft);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+}
+
+.btn-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--primary-green);
+  transition: color 0.2s ease;
+}
+
+.card-format:hover .btn-action {
+  color: var(--dark-green);
+}
+
+/* MEDIA QUERIES UNTUK HP */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1.25rem 0.85rem 2rem 0.85rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}

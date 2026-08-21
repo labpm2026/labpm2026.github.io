@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="png" href="logo.png" />
+  <title>LAB PM 2026</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/acara.css" />
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- NAVBAR -->
+    <header class="top-header">
+      <div class="nav-container">
+        <a href="index.html" class="brand">
+          <div class="brand-logo"><img src="logo.png" alt="Logo Laboratorium Pengolahan Mineral" /></div>
+          <span>Pengolahan Mineral 2026</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav id="mainNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="acara.html" class="active">Acara</a></li>
+            <li><a href="tata_tertib.html">Tata Tertib</a></li>
+            <li><a href="refrensi.html">Referensi</a></li>
+            <li><a href="format_laporan.html">Format Laporan</a></li>
+            <li><a href="asiste_lab.html">Asisten Lab</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <div class="animated-orb orb-1"></div>
+      <div class="animated-orb orb-2"></div>
+
+      <div class="content-wrapper">
+
+        <!-- SELECTOR TOMBOL ACARA 1–8 (DESKTOP/TABLET) -->
+        <div class="acara-selector-container">
+          <div class="acara-selector">
+            <button class="btn-acara active" onclick="switchAcara(1)">Acara 1</button>
+            <button class="btn-acara" onclick="switchAcara(2)">Acara 2</button>
+            <button class="btn-acara" onclick="switchAcara(3)">Acara 3</button>
+            <button class="btn-acara" onclick="switchAcara(4)">Acara 4</button>
+            <button class="btn-acara" onclick="switchAcara(5)">Acara 5</button>
+            <button class="btn-acara" onclick="switchAcara(6)">Acara 6</button>
+            <button class="btn-acara" onclick="switchAcara(7)">Acara 7</button>
+            <button class="btn-acara" onclick="switchAcara(8)">Acara 8</button>
+          </div>
+        </div>
+
+        <!-- DROPDOWN "PILIH ACARA" (HANDPHONE) -->
+        <div class="acara-select-mobile">
+          <label class="acara-select-label" for="acaraSelect">
+            <span class="acara-select-icon">📋</span> Pilih Acara
+          </label>
+          <div class="acara-select-wrapper">
+            <select id="acaraSelect" class="acara-select" onchange="switchAcara(parseInt(this.value))">
+              <option value="1">Acara I — Sampling &amp; Mineralogy</option>
+              <option value="2">Acara II — Comminution</option>
+              <option value="3">Acara III — Particle Size Distribution</option>
+              <option value="4">Acara IV — Magnetic Separation</option>
+              <option value="5">Acara V — Gravity Concentration</option>
+              <option value="6">Acara VI — Flotation</option>
+              <option value="7">Acara VII — Settling Test</option>
+              <option value="8">Acara VIII — Case Study</option>
+            </select>
+            <span class="acara-select-arrow">▾</span>
+          </div>
+        </div>
+
+        <!-- HEADER ACARA TERPILIH -->
+        <div class="acara-header-box" id="acara-header">
+          <div class="acara-tag" id="display-tag">ACARA I</div>
+          <h1 class="acara-title" id="display-title">Sampling &amp; Mineralogy</h1>
+          <p class="acara-desc" id="display-desc">
+            Praktikum pengambilan sampel representatif untuk meminimalkan bias, serta analisis hitung butir menggunakan mikroskop untuk menentukan derajat liberasi mineral.
+          </p>
+        </div>
+
+        <!-- 3 KARTU DINAMIS -->
+        <div class="cards-grid" id="cards-container">
+
+          <!-- Card 1: Modul Praktikum -->
+          <a href="#" class="card-modul" id="card-modul" target="_blank" rel="noopener noreferrer">
+            <div class="card-icon">📘</div>
+            <div class="card-content-mobile">
+              <div class="card-title" id="title-modul">Modul Praktikum</div>
+              <div class="card-sub" id="sub-modul">Panduan lengkap praktikum</div>
+              <div class="card-btn">Lihat Modul <span>→</span></div>
+            </div>
+          </a>
+
+          <!-- Card 2: Tugas Pendahuluan -->
+          <a href="#" class="card-modul" id="card-tp" target="_blank" rel="noopener noreferrer">
+            <div class="card-icon">📝</div>
+            <div class="card-content-mobile">
+              <div class="card-title" id="title-tp">Tugas Pendahuluan</div>
+              <div class="card-sub" id="sub-tp">Soal pra-praktikum</div>
+              <div class="card-btn">Lihat TP <span>→</span></div>
+            </div>
+          </a>
+
+          <!-- Card 3: Tugas Praktikum -->
+          <a href="#" class="card-modul" id="card-tugas" target="_blank" rel="noopener noreferrer">
+            <div class="card-icon">📌</div>
+            <div class="card-content-mobile">
+              <div class="card-title" id="title-tugas">Tugas Praktikum</div>
+              <div class="card-sub" id="sub-tugas">Laporan hasil praktikum</div>
+              <div class="card-btn">Lihat Tugas <span>→</span></div>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/acara.js"></script>
+</body>
+</html>

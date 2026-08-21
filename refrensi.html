@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="png" href="logo.png">
+  <title>lAB PM 2026</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS terpisah: common.css (nav & dasar, seragam di semua halaman) + refrensi.css (khusus halaman ini) -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/refrensi.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <!-- NAVBAR (markup seragam di semua halaman) -->
+    <header class="top-header">
+      <div class="nav-container">
+        <a href="index.html" class="brand">
+          <div class="brand-logo"><img src="logo.png" alt="Logo Laboratorium Pengolahan Mineral"></div>
+          <span>Pengolahan Mineral 2026</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav id="mainNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="acara.html">Acara</a></li>
+            <li><a href="tata_tertib.html">Tata Tertib</a></li>
+            <li><a href="refrensi.html" class="active">Referensi</a></li>
+            <li><a href="format_laporan.html">Format Laporan</a></li>
+            <li><a href="asiste_lab.html">Asisten Lab</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <div class="animated-orb orb-1"></div>
+      <div class="animated-orb orb-2"></div>
+
+      <div class="content-wrapper">
+
+        <!-- HEADER PAGE -->
+        <div class="page-header">
+          <div class="page-tag">DIREKTORI REFRENSI</div>
+          <h1 class="page-title">Referensi & Perpustakaan Digital</h1>
+          <p class="page-desc">
+            Kumpulan artikel ilmiah, e-book acuan, dan refrensi yang berkaitan dengan pengolahan mineral.
+          </p>
+        </div>
+
+        <!-- LIST CARD PANJANG MEMANJANG -->
+        <div class="reference-list">
+
+          <!-- Card Panjang 1 -->
+          <a href="https://link-artikel-jurnal-1.com" target="_blank" rel="noopener noreferrer" class="card-ref-long">
+            <div class="ref-main-info">
+              <div class="ref-icon">📚</div>
+              <div class="ref-text">
+                <div class="ref-title">Wills' Mineral Processing Technology (8th Edition)</div>
+              </div>
+            </div>
+            <div class="ref-action">
+              Buka ↗
+            </div>
+          </a>
+
+          <!-- Card Panjang 2 -->
+          <a href="https://link-artikel-jurnal-1.com" target="_blank" rel="noopener noreferrer" class="card-ref-long">
+            <div class="ref-main-info">
+              <div class="ref-icon">📚</div>
+              <div class="ref-text">
+                <div class="ref-title">Wills' Mineral Processing Technology (8th Edition)</div>
+              </div>
+            </div>
+            <div class="ref-action">
+              Buka ↗
+            </div>
+          </a>
+
+          <!-- Card Panjang 3 -->
+          <a href="https://link-artikel-jurnal-1.com" target="_blank" rel="noopener noreferrer" class="card-ref-long">
+            <div class="ref-main-info">
+              <div class="ref-icon">📚</div>
+              <div class="ref-text">
+                <div class="ref-title">Wills' Mineral Processing Technology (8th Edition)</div>
+              </div>
+            </div>
+            <div class="ref-action">
+              Buka ↗
+            </div>
+          </a>
+
+          <!-- Card Panjang 4 -->
+          <a href="https://link-artikel-jurnal-1.com" target="_blank" rel="noopener noreferrer" class="card-ref-long">
+            <div class="ref-main-info">
+              <div class="ref-icon">📚</div>
+              <div class="ref-text">
+                <div class="ref-title">Wills' Mineral Processing Technology (8th Edition)</div>
+              </div>
+            </div>
+            <div class="ref-action">
+              Buka ↗
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="js/common.js"></script>
+</body>
+</html>
