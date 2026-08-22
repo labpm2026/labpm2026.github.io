@@ -25,8 +25,7 @@
   padding: clamp(2.5rem, 8vw, 4rem) clamp(1.25rem, 4vw, 2rem);
   /* Overlay foto + latar hijau keputihan lembut */
   background:
-    linear-gradient(135deg, rgba(240, 253, 244, 0.93) 0%, rgba(230, 244, 234, 0.88) 60%, rgba(255, 255, 255, 0.96) 100%),
-    url('https://images.unsplash.com/photo-1600363503477-a8d1d6d57dfc?q=80https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1800w=2022https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1800auto=formathttps://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1800fit=crophttps://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1800ixlib=rb-4.1.0https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1800ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+    linear-gradient(135deg, rgba(240, 253, 244, 0.93) 0%, rgba(230, 244, 234, 0.88) 60%, rgba(255, 255, 255, 0.96) 100%);
   overflow: hidden;
 }
 
