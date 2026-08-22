@@ -7,7 +7,7 @@ const databaseAcara = {
     cards: {
       modul: { title: "Modul Praktikum", sub: "Panduan lengkap praktikum", link: "#" },
       tp: { title: "Tugas Pendahuluan", sub: "Soal pra-praktikum", link: "#" },
-      tugas: { title: "Tugas Praktikum", sub: "Laporan hasil praktikum", link: "#" }
+      tugas: { title: "Tugas Praktikum", sub: "Tugas Setelah praktikum", link: "#" }
     }
   },
   2: {
@@ -17,7 +17,7 @@ const databaseAcara = {
     cards: {
       modul: { title: "Modul Praktikum", sub: "Panduan lengkap praktikum", link: "#" },
       tp: { title: "Tugas Pendahuluan", sub: "Soal pra-praktikum", link: "#" },
-      tugas: { title: "Tugas Praktikum", sub: "Laporan hasil praktikum", link: "#" }
+      tugas: { title: "Tugas Praktikum", sub: "Tugas Setelah praktikum", link: "#" }
     }
   },
   3: {
@@ -27,7 +27,7 @@ const databaseAcara = {
     cards: {
       modul: { title: "Modul Praktikum", sub: "Panduan lengkap praktikum", link: "#" },
       tp: { title: "Tugas Pendahuluan", sub: "Soal pra-praktikum", link: "#" },
-      tugas: { title: "Tugas Praktikum", sub: "Laporan hasil praktikum", link: "#" }
+      tugas: { title: "Tugas Praktikum", sub: "Tugas Setelah praktikum", link: "#" }
     }
   },
   4: {
@@ -37,7 +37,7 @@ const databaseAcara = {
     cards: {
       modul: { title: "Modul Praktikum", sub: "Panduan lengkap praktikum", link: "#" },
       tp: { title: "Tugas Pendahuluan", sub: "Soal pra-praktikum", link: "#" },
-      tugas: { title: "Tugas Praktikum", sub: "Laporan hasil praktikum", link: "#" }
+      tugas: { title: "Tugas Praktikum", sub: "Tugas Setelah praktikum", link: "#" }
     }
   },
   5: {
@@ -47,7 +47,7 @@ const databaseAcara = {
     cards: {
       modul: { title: "Modul Praktikum", sub: "Panduan lengkap praktikum", link: "#" },
       tp: { title: "Tugas Pendahuluan", sub: "Soal pra-praktikum", link: "#" },
-      tugas: { title: "Tugas Praktikum", sub: "Laporan hasil praktikum", link: "#" }
+      tugas: { title: "Tugas Praktikum", sub: "Tugas Setelah praktikum", link: "#" }
     }
   },
   6: {
@@ -57,7 +57,7 @@ const databaseAcara = {
     cards: {
       modul: { title: "Modul Praktikum", sub: "Panduan lengkap praktikum", link: "#" },
       tp: { title: "Tugas Pendahuluan", sub: "Soal pra-praktikum", link: "#" },
-      tugas: { title: "Tugas Praktikum", sub: "Laporan hasil praktikum", link: "#" }
+      tugas: { title: "Tugas Praktikum", sub: "Tugas Setelah praktikum", link: "#" }
     }
   },
   7: {
@@ -67,7 +67,7 @@ const databaseAcara = {
     cards: {
       modul: { title: "Modul Praktikum", sub: "Panduan lengkap praktikum", link: "#" },
       tp: { title: "Tugas Pendahuluan", sub: "Soal pra-praktikum", link: "#" },
-      tugas: { title: "Tugas Praktikum", sub: "Laporan hasil praktikum", link: "#" }
+      tugas: { title: "Tugas Praktikum", sub: "Tugas Setelah praktikum", link: "#" }
     }
   },
   8: {
@@ -77,7 +77,7 @@ const databaseAcara = {
     cards: {
       modul: { title: "Modul Praktikum", sub: "Panduan lengkap praktikum", link: "#" },
       tp: { title: "Tugas Pendahuluan", sub: "Soal pra-praktikum", link: "#" },
-      tugas: { title: "Tugas Praktikum", sub: "Laporan hasil praktikum", link: "#" }
+      tugas: { title: "Tugas Praktikum", sub: "Tugas Setelah praktikum", link: "#" }
     }
   }
 };
