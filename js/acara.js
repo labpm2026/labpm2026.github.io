@@ -5,7 +5,7 @@ const databaseAcara = {
     title: "Sampling & Mineralogy",
     desc: "Praktikum pengambilan sampel representatif untuk meminimalkan bias, serta analisis hitung butir menggunakan mikroskop untuk menentukan derajat liberasi mineral.",
     cards: {
-      modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
+      modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "https://drive.google.com/file/d/1RpsiL5wIZtJ4la56FCZAtAYEygEEE38_/view" },
       tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
       lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" }
     }
