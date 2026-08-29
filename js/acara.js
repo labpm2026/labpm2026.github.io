@@ -1,4 +1,4 @@
-// Database Acara 1 sampai 8 — sekarang masing-masing hanya memiliki 2 kartu
+// Database Acara 1 sampai 8 — sekarang masing-masing memiliki 3 kartu
 const databaseAcara = {
   1: {
     tag: "ACARA I",
@@ -6,7 +6,8 @@ const databaseAcara = {
     desc: "Praktikum pengambilan sampel representatif untuk meminimalkan bias, serta analisis hitung butir menggunakan mikroskop untuk menentukan derajat liberasi mineral.",
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
-      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" }
+      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" }
     }
   },
   2: {
@@ -15,7 +16,8 @@ const databaseAcara = {
     desc: "Mempelajari reduksi ukuran bijih lewat peremukan dan penggerusan untuk meliberasikan mineral berharga, serta mengevaluasi kebutuhan energi melalui Bond Work Index.",
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
-      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" }
+      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" }
     }
   },
   3: {
@@ -24,7 +26,8 @@ const databaseAcara = {
     desc: "Berfokus pada pemisahan ukuran partikel melalui metode sizing (penyaringan) dan classification (pengendapan fluida), guna menentukan parameter karakteristik F80 dan P80.",
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
-      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" }
+      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" }
     }
   },
   4: {
@@ -33,7 +36,8 @@ const databaseAcara = {
     desc: "Pemisahan mineral berharga berdasarkan perbedaan sifat kemagnetannya, membagi sampel menjadi ferromagnetic, paramagnetic, dan diamagnetic menggunakan alat pemisah magnetik.",
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
-      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" }
+      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" }
     }
   },
   5: {
@@ -42,7 +46,8 @@ const databaseAcara = {
     desc: "Metode konsentrasi mineral berdasarkan berat jenis memanfaatkan gaya gravitasi dan aliran fluida, yang kemudahannya ditentukan oleh nilai Criteria of Concentration.",
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
-      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" }
+      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" }
     }
   },
   6: {
@@ -51,7 +56,8 @@ const databaseAcara = {
     desc: "Memisahkan mineral berdasarkan sifat kimia-fisika permukaan (hidrofilik dan hidrofobik) menggunakan gelembung udara dan bantuan reagen kolektor, modifikator, serta frother.",
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
-      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" }
+      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" }
     }
   },
   7: {
@@ -60,7 +66,8 @@ const databaseAcara = {
     desc: "Mempelajari pengurangan kadar air (dewatering) melalui tahap thickening, filtering, dan drying, serta melakukan uji laju pengendapan partikel (settling test).",
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
-      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" }
+      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" }
     }
   },
   8: {
@@ -69,7 +76,8 @@ const databaseAcara = {
     desc: "Kegiatan studi kasus untuk memecahkan masalah nyata industri, mencakup analisis karakteristik bijih, perancangan diagram alir (flowsheet), dan evaluasi hasil pengolahan.",
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
-      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" }
+      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" }
     }
   }
 };
@@ -151,6 +159,30 @@ function switchAcara(nomorAcara) {
     card2.style.opacity = '0.7';
     btn2.innerHTML = 'Dokumen belum tersedia';
     card2.classList.add('disabled');
+  }
+
+  // ---------- UPDATE KARTU 3: Lampiran A ----------
+  const card3 = document.getElementById('card-lampiran');
+  const title3 = document.getElementById('title-lampiran');
+  const sub3 = document.getElementById('sub-lampiran');
+  const btn3 = document.getElementById('btn-lampiran');
+  const data3 = selected.cards.lampiran;
+
+  title3.innerText = data3.title;
+  sub3.innerText = data3.sub;
+
+  if (data3.link && data3.link !== '#' && data3.link.trim() !== '') {
+    card3.href = data3.link;
+    card3.style.pointerEvents = 'auto';
+    card3.style.opacity = '1';
+    btn3.innerHTML = 'Lihat <span>→</span>';
+    card3.classList.remove('disabled');
+  } else {
+    card3.href = 'javascript:void(0)';
+    card3.style.pointerEvents = 'none';
+    card3.style.opacity = '0.7';
+    btn3.innerHTML = 'Dokumen belum tersedia';
+    card3.classList.add('disabled');
   }
 }
 
