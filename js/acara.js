@@ -12,7 +12,7 @@ const databaseAcara = {
   },
   2: {
     tag: "ACARA II",
-    title: "Comminution",
+    title: "Crushing & Grinding",
     desc: "Mempelajari reduksi ukuran bijih lewat peremukan dan penggerusan untuk meliberasikan mineral berharga, serta mengevaluasi kebutuhan energi melalui Bond Work Index.",
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
