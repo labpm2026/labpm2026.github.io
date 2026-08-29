@@ -338,3 +338,25 @@
     margin-top: 0.2rem;
   }
 }
+
+/* --- CSS tambahan untuk menangani card disabled --- */
+.card-modul.disabled {
+  cursor: default;
+  opacity: 0.7;
+  filter: grayscale(0.2);
+  transition: opacity 0.3s ease;
+}
+
+.card-modul.disabled .card-btn {
+  color: #888;
+  font-weight: 500;
+}
+
+.card-modul.disabled .card-btn span {
+  display: none;
+}
+
+.card-modul.disabled:hover {
+  transform: none;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
