@@ -1,4 +1,4 @@
-// Database Acara 1 sampai 8 — sekarang masing-masing memiliki 3 kartu
+// Database Acara 1 sampai 8 — masing-masing memiliki 4 kartu (data_sekunder hanya dipakai untuk acara 1)
 const databaseAcara = {
   1: {
     tag: "ACARA I",
@@ -7,7 +7,8 @@ const databaseAcara = {
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "https://drive.google.com/file/d/1RpsiL5wIZtJ4la56FCZAtAYEygEEE38_/view" },
       tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
-      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "https://docs.google.com/document/d/1Jdv4AgfxQSTTFTQWARa-ny0bl3dAWIda/edit?usp=sharing&ouid=105953452739258329814&rtpof=true&sd=true" }
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "https://docs.google.com/document/d/1Jdv4AgfxQSTTFTQWARa-ny0bl3dAWIda/edit?usp=sharing&ouid=105953452739258329814&rtpof=true&sd=true" },
+      data_sekunder: { title: "Data Sekunder", sub: "Data sekunder tetap ditulis langsung di Lampiran A", link: "" } // isi link jika ada
     }
   },
   2: {
@@ -17,7 +18,8 @@ const databaseAcara = {
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
       tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
-      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" }
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" },
+      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum", link: "" }
     }
   },
   3: {
@@ -27,7 +29,8 @@ const databaseAcara = {
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
       tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
-      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" }
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" },
+      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum", link: "" }
     }
   },
   4: {
@@ -37,7 +40,8 @@ const databaseAcara = {
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
       tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
-      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" }
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" },
+      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum", link: "" }
     }
   },
   5: {
@@ -47,7 +51,8 @@ const databaseAcara = {
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
       tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
-      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" }
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" },
+      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum", link: "" }
     }
   },
   6: {
@@ -57,7 +62,8 @@ const databaseAcara = {
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
       tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
-      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" }
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" },
+      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum", link: "" }
     }
   },
   7: {
@@ -67,7 +73,8 @@ const databaseAcara = {
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
       tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
-      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" }
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" },
+      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum", link: "" }
     }
   },
   8: {
@@ -77,7 +84,8 @@ const databaseAcara = {
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
       tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
-      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" }
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" },
+      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum", link: "" }
     }
   }
 };
@@ -183,6 +191,38 @@ function switchAcara(nomorAcara) {
     card3.style.opacity = '0.7';
     btn3.innerHTML = 'Dokumen belum tersedia';
     card3.classList.add('disabled');
+  }
+
+  // ---------- UPDATE KARTU 4: Data Sekunder (hanya untuk Acara 1) ----------
+  const card4 = document.getElementById('card-data-sekunder');
+  const title4 = document.getElementById('title-data-sekunder');
+  const sub4 = document.getElementById('sub-data-sekunder');
+  const btn4 = document.getElementById('btn-data-sekunder');
+  const data4 = selected.cards.data_sekunder;
+
+  // Tampilkan/sembunyikan card berdasarkan nomor acara
+  if (nomorAcara === 1) {
+    card4.style.display = 'flex'; // atau '' agar default
+    // Update konten card
+    title4.innerText = data4.title;
+    sub4.innerText = data4.sub;
+
+    if (data4.link && data4.link !== '#' && data4.link.trim() !== '') {
+      card4.href = data4.link;
+      card4.style.pointerEvents = 'auto';
+      card4.style.opacity = '1';
+      btn4.innerHTML = 'Lihat <span>→</span>';
+      card4.classList.remove('disabled');
+    } else {
+      card4.href = 'javascript:void(0)';
+      card4.style.pointerEvents = 'none';
+      card4.style.opacity = '0.7';
+      btn4.innerHTML = 'Dokumen belum tersedia';
+      card4.classList.add('disabled');
+    }
+  } else {
+    // Sembunyikan card untuk acara lain
+    card4.style.display = 'none';
   }
 }
 
