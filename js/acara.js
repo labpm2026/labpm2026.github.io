@@ -7,8 +7,8 @@ const databaseAcara = {
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "https://drive.google.com/file/d/1RpsiL5wIZtJ4la56FCZAtAYEygEEE38_/view" },
       tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
-      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "https://docs.google.com/document/d/1Jdv4AgfxQSTTFTQWARa-ny0bl3dAWIda/edit?usp=sharing&ouid=105953452739258329814&rtpof=true&sd=true" },
-      data_sekunder: { title: "Data Sekunder", sub: "Data sekunder tetap ditulis langsung di Lampiran A", link: "" } // isi link jika ada
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "https://docs.google.com/document/d/1JQEWcjr5u2xLQVGFfG0zpj27MP1swjfV/edit?usp=sharing&ouid=113681177115110815243&rtpof=true&sd=true" },
+      data_sekunder: { title: "Data Sekunder", sub: "Data sekunder tetap ditulis langsung di Lampiran A", link: "https://drive.google.com/drive/folders/1kpqUznpXPwGXCqzccxN_WjBcG14gNgLL?usp=sharing" } // isi link jika ada
     }
   },
   2: {
