@@ -1,4 +1,4 @@
-// Database Acara 1 sampai 8 — masing-masing memiliki 4 kartu (data_sekunder hanya dipakai untuk acara 1)
+// Database Acara 1 sampai 8
 const databaseAcara = {
   1: {
     tag: "ACARA I",
@@ -8,7 +8,7 @@ const databaseAcara = {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "https://drive.google.com/file/d/1RpsiL5wIZtJ4la56FCZAtAYEygEEE38_/view" },
       tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "https://drive.google.com/file/d/1MjECFQsyqQ2WOjKepEDfar-u6MSLdZ_-/view?usp=sharing" },
       lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "https://docs.google.com/document/d/1JQEWcjr5u2xLQVGFfG0zpj27MP1swjfV/edit?usp=sharing&ouid=113681177115110815243&rtpof=true&sd=true" },
-      data_sekunder: { title: "Data Sekunder", sub: "Data sekunder tetap ditulis langsung di Lampiran A", link: "https://drive.google.com/drive/folders/1kpqUznpXPwGXCqzccxN_WjBcG14gNgLL?usp=sharing" } // isi link jika ada
+      data_sekunder: { title: "Data Sekunder", sub: "Data sekunder tetap ditulis langsung di Lampiran A", link: "https://drive.google.com/drive/folders/1kpqUznpXPwGXCqzccxN_WjBcG14gNgLL?usp=sharing" }
     }
   },
   2: {
@@ -16,10 +16,11 @@ const databaseAcara = {
     title: "Crushing & Grinding",
     desc: "Mempelajari reduksi ukuran bijih lewat peremukan dan penggerusan untuk meliberasikan mineral berharga, serta mengevaluasi kebutuhan energi melalui Bond Work Index.",
     cards: {
-      modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
-      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
-      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" },
-      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum", link: "" }
+      modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "https://drive.google.com/file/d/1wdXrruy3h0EFwzqnMG9sqX4X0qgY0gpc/view?usp=sharing" },
+      // field 'tugas' diisi dengan Data Sekunder untuk acara 2–8
+      tugas: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "https://drive.google.com/drive/u/1/folders/1xDjLyZljTolfotuOxXIjKXqHkFmhUYLc" },
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "https://docs.google.com/document/d/10uSbh5HxyzE4jAjwL61Zoz20AUZ_nNQj/edit?usp=drive_link&ouid=113681177115110815243&rtpof=true&sd=true" },
+      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" } // tetap ada tapi tidak dipakai
     }
   },
   3: {
@@ -28,9 +29,9 @@ const databaseAcara = {
     desc: "Berfokus pada pemisahan ukuran partikel melalui metode sizing (penyaringan) dan classification (pengendapan fluida), guna menentukan parameter karakteristik F80 dan P80.",
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
-      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
+      tugas: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" },
       lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" },
-      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum", link: "" }
+      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" }
     }
   },
   4: {
@@ -39,9 +40,9 @@ const databaseAcara = {
     desc: "Pemisahan mineral berharga berdasarkan perbedaan sifat kemagnetannya, membagi sampel menjadi ferromagnetic, paramagnetic, dan diamagnetic menggunakan alat pemisah magnetik.",
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
-      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
+      tugas: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" },
       lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" },
-      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum", link: "" }
+      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" }
     }
   },
   5: {
@@ -50,9 +51,9 @@ const databaseAcara = {
     desc: "Metode konsentrasi mineral berdasarkan berat jenis memanfaatkan gaya gravitasi dan aliran fluida, yang kemudahannya ditentukan oleh nilai Criteria of Concentration.",
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
-      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
+      tugas: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" },
       lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" },
-      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum", link: "" }
+      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" }
     }
   },
   6: {
@@ -61,9 +62,9 @@ const databaseAcara = {
     desc: "Memisahkan mineral berdasarkan sifat kimia-fisika permukaan (hidrofilik dan hidrofobik) menggunakan gelembung udara dan bantuan reagen kolektor, modifikator, serta frother.",
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
-      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
+      tugas: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" },
       lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" },
-      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum", link: "" }
+      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" }
     }
   },
   7: {
@@ -72,9 +73,9 @@ const databaseAcara = {
     desc: "Mempelajari pengurangan kadar air (dewatering) melalui tahap thickening, filtering, dan drying, serta melakukan uji laju pengendapan partikel (settling test).",
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
-      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
+      tugas: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" },
       lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" },
-      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum", link: "" }
+      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" }
     }
   },
   8: {
@@ -83,21 +84,21 @@ const databaseAcara = {
     desc: "Kegiatan studi kasus untuk memecahkan masalah nyata industri, mencakup analisis karakteristik bijih, perancangan diagram alir (flowsheet), dan evaluasi hasil pengolahan.",
     cards: {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
-      tugas: { title: "Tugas Praktikum", sub: "Tugas setelah praktikum", link: "" },
+      tugas: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" },
       lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" },
-      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum", link: "" }
+      data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" }
     }
   }
 };
 
 function switchAcara(nomorAcara) {
-  // 1. Update status tombol aktif (desktop)
+  // update tombol aktif desktop
   const buttons = document.querySelectorAll('.btn-acara');
   buttons.forEach((btn, index) => {
     btn.classList.toggle('active', index + 1 === nomorAcara);
   });
 
-  // 1b. Sinkronkan dropdown (handphone)
+  // sinkron dropdown
   const acaraSelect = document.getElementById('acaraSelect');
   if (acaraSelect && acaraSelect.value !== String(nomorAcara)) {
     acaraSelect.value = String(nomorAcara);
@@ -105,7 +106,7 @@ function switchAcara(nomorAcara) {
 
   const selected = databaseAcara[nomorAcara];
 
-  // 2. Animasi header
+  // animasi header
   const headerBox = document.getElementById('acara-header');
   headerBox.style.animation = 'none';
   headerBox.offsetHeight;
@@ -115,13 +116,13 @@ function switchAcara(nomorAcara) {
   document.getElementById('display-title').innerText = selected.title;
   document.getElementById('display-desc').innerText = selected.desc;
 
-  // 3. Animasi container kartu
+  // animasi container
   const cardsContainer = document.getElementById('cards-container');
   cardsContainer.classList.remove('animated-change');
   cardsContainer.offsetHeight;
   cardsContainer.classList.add('animated-change');
 
-  // ---------- UPDATE KARTU 1: Modul & Tugas Pendahuluan ----------
+  // ---------- KARTU 1: Modul & TP ----------
   const card1 = document.getElementById('card-modul-tp');
   const title1 = document.getElementById('title-modul-tp');
   const sub1 = document.getElementById('sub-modul-tp');
@@ -131,7 +132,7 @@ function switchAcara(nomorAcara) {
   title1.innerText = data1.title;
   sub1.innerText = data1.sub;
 
-  if (data1.link && data1.link !== '#' && data1.link.trim() !== '') {
+  if (data1.link && data1.link.trim() !== '') {
     card1.href = data1.link;
     card1.style.pointerEvents = 'auto';
     card1.style.opacity = '1';
@@ -145,17 +146,31 @@ function switchAcara(nomorAcara) {
     card1.classList.add('disabled');
   }
 
-  // ---------- UPDATE KARTU 2: Tugas Praktikum ----------
+  // ---------- KARTU 2: Tugas Praktikum (Acara 1) atau Data Sekunder (Acara 2-8) ----------
   const card2 = document.getElementById('card-tugas');
+  const icon2 = card2.querySelector('.card-icon');
   const title2 = document.getElementById('title-tugas');
   const sub2 = document.getElementById('sub-tugas');
   const btn2 = document.getElementById('btn-tugas');
+
+  // Data diambil dari field 'tugas' yang sudah diisi sesuai
   const data2 = selected.cards.tugas;
 
-  title2.innerText = data2.title;
+  // Ubah ikon dan judul berdasarkan acara
+  if (nomorAcara === 1) {
+    icon2.textContent = '📌';
+    title2.innerText = 'Tugas Praktikum';
+    // sub-nya tetap dari database (Tugas setelah praktikum)
+  } else {
+    icon2.textContent = '📊';
+    title2.innerText = 'Data Sekunder';
+    // sub-nya dari database (Data pendukung praktikum (jika tersedia))
+  }
+
+  // sub2 diambil dari data2.sub (sudah sesuai)
   sub2.innerText = data2.sub;
 
-  if (data2.link && data2.link !== '#' && data2.link.trim() !== '') {
+  if (data2.link && data2.link.trim() !== '') {
     card2.href = data2.link;
     card2.style.pointerEvents = 'auto';
     card2.style.opacity = '1';
@@ -169,7 +184,7 @@ function switchAcara(nomorAcara) {
     card2.classList.add('disabled');
   }
 
-  // ---------- UPDATE KARTU 3: Lampiran A ----------
+  // ---------- KARTU 3: Lampiran A ----------
   const card3 = document.getElementById('card-lampiran');
   const title3 = document.getElementById('title-lampiran');
   const sub3 = document.getElementById('sub-lampiran');
@@ -179,7 +194,7 @@ function switchAcara(nomorAcara) {
   title3.innerText = data3.title;
   sub3.innerText = data3.sub;
 
-  if (data3.link && data3.link !== '#' && data3.link.trim() !== '') {
+  if (data3.link && data3.link.trim() !== '') {
     card3.href = data3.link;
     card3.style.pointerEvents = 'auto';
     card3.style.opacity = '1';
@@ -193,21 +208,19 @@ function switchAcara(nomorAcara) {
     card3.classList.add('disabled');
   }
 
-  // ---------- UPDATE KARTU 4: Data Sekunder (hanya untuk Acara 1) ----------
+  // ---------- KARTU 4: Data Sekunder (khusus Acara 1) ----------
   const card4 = document.getElementById('card-data-sekunder');
   const title4 = document.getElementById('title-data-sekunder');
   const sub4 = document.getElementById('sub-data-sekunder');
   const btn4 = document.getElementById('btn-data-sekunder');
   const data4 = selected.cards.data_sekunder;
 
-  // Tampilkan/sembunyikan card berdasarkan nomor acara
   if (nomorAcara === 1) {
-    card4.style.display = 'flex'; // atau '' agar default
-    // Update konten card
+    card4.style.display = 'flex';
     title4.innerText = data4.title;
     sub4.innerText = data4.sub;
 
-    if (data4.link && data4.link !== '#' && data4.link.trim() !== '') {
+    if (data4.link && data4.link.trim() !== '') {
       card4.href = data4.link;
       card4.style.pointerEvents = 'auto';
       card4.style.opacity = '1';
@@ -221,10 +234,9 @@ function switchAcara(nomorAcara) {
       card4.classList.add('disabled');
     }
   } else {
-    // Sembunyikan card untuk acara lain
     card4.style.display = 'none';
   }
 }
 
-// ===== INISIALISASI AWAL: tampilkan Acara 1 saat halaman dimuat =====
+// Inisialisasi tampilkan Acara 1
 switchAcara(1);
