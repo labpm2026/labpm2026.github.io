@@ -19,7 +19,7 @@ const databaseAcara = {
       modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "https://drive.google.com/file/d/1wdXrruy3h0EFwzqnMG9sqX4X0qgY0gpc/view?usp=sharing" },
       // field 'tugas' diisi dengan Data Sekunder untuk acara 2–8
       tugas: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "https://drive.google.com/drive/u/1/folders/1xDjLyZljTolfotuOxXIjKXqHkFmhUYLc" },
-      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "https://docs.google.com/document/d/10uSbh5HxyzE4jAjwL61Zoz20AUZ_nNQj/edit?usp=drive_link&ouid=113681177115110815243&rtpof=true&sd=true" },
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" },
       data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" } // tetap ada tapi tidak dipakai
     }
   },
