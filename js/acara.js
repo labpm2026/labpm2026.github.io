@@ -28,7 +28,7 @@ const databaseAcara = {
     title: "Particle Size Distribution (PSD)",
     desc: "Berfokus pada pemisahan ukuran partikel melalui metode sizing (penyaringan) dan classification (pengendapan fluida), guna menentukan parameter karakteristik F80 dan P80.",
     cards: {
-      modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
+      modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "https://drive.google.com/file/d/18xvY3IEws4ldeJfvWxqFCIP7514qycYR/view?usp=drive_link" },
       tugas: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" },
       lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" },
       data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" }
