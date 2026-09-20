@@ -39,7 +39,7 @@ const databaseAcara = {
     title: "Magnetic Separation",
     desc: "Pemisahan mineral berharga berdasarkan perbedaan sifat kemagnetannya, membagi sampel menjadi ferromagnetic, paramagnetic, dan diamagnetic menggunakan alat pemisah magnetik.",
     cards: {
-      modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
+      modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "https://drive.google.com/file/d/1KTlQvUlFdMYCfBD0Rn_h4NTd2p1ofoax/view?usp=sharing" },
       tugas: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" },
       lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" },
       data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" }
