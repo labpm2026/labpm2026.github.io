@@ -50,9 +50,9 @@ const databaseAcara = {
     title: "Gravity Concentration",
     desc: "Metode konsentrasi mineral berdasarkan berat jenis memanfaatkan gaya gravitasi dan aliran fluida, yang kemudahannya ditentukan oleh nilai Criteria of Concentration.",
     cards: {
-      modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
+      modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "https://drive.google.com/file/d/1tUvtRbcEAawdbpP4kPqRR0jPFfnCjAO6/view?usp=drivesdk" },
       tugas: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" },
-      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" },
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "https://drive.google.com/file/d/1PxgbC1P2VMJntfJr4IZrRHwhpfcTmXCB/view?usp=drivesdk" },
       data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" }
     }
   },
