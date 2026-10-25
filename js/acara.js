@@ -61,9 +61,9 @@ const databaseAcara = {
     title: "Flotation",
     desc: "Memisahkan mineral berdasarkan sifat kimia-fisika permukaan (hidrofilik dan hidrofobik) menggunakan gelembung udara dan bantuan reagen kolektor, modifikator, serta frother.",
     cards: {
-      modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "" },
-      tugas: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" },
-      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "" },
+      modul_tp: { title: "Modul & Tugas Pendahuluan", sub: "Panduan dan soal pra-praktikum", link: "https://drive.google.com/file/d/1iNY0GrRP3qiDAAWCnvcTBp3yqZiFTww2/view?usp=sharing" },
+      tugas: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "https://drive.google.com/file/d/1cYkJ7G1VWqvRL_lo7GzgchIYGT8brkTb/view?usp=drive_link" },
+      lampiran: { title: "Lampiran A", sub: "Laporan sementara praktikum", link: "https://drive.google.com/file/d/1UWzqAS3VrtkGsf-i5KbPn3kcu2u0pggn/view?usp=sharing" },
       data_sekunder: { title: "Data Sekunder", sub: "Data pendukung praktikum (jika tersedia)", link: "" }
     }
   },
